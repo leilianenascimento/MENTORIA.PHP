@@ -15,3 +15,21 @@ print_r($dadospessoais);
 echo "</pre>";
 echo"<hr>";
 
+class dadospessoais{
+    public $nome;
+    public $idade;
+    public $saldo;
+
+    public function exibirdados(){
+        echo " Exibindo os dados <br><br>";
+        echo"Nome: " . $this->nome . "<br>";
+        echo"Idade: " . $this->idade . "<br>";
+        echo "Saldo: " . $this ->saldo . "<br";
+    }
+}
+
+$pessoas = new dadospessoais();
+$pessoas->nome ="Leila";
+$pessoas->idade = 30;
+$pessoas->saldo= 500;
+$pessoas->exibirdados();
